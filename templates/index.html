@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMS Spam Detection</title>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			<center><h1>SMS Spam Detection</h1></center>
+			<br/>
+			<br/>
+		</div>
+		
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+		<center>
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p>SMS Example</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="comment" rows="4" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="predict">
+		
+		
+		</form>
+		</center>
+	</div>
+
+	
+	
+
+</body>
+</html>
+
